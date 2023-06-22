@@ -40,9 +40,9 @@ public class Locators {
     public By productSetLookup = By.xpath("//*[@id='select2-productSets-container']");
     public By productSetSearch = By.xpath("//*[@aria-controls='select2-productSets-results']");
     public By productSetSelection = By.xpath("//li[@role='option'][1]");
-    /*
-     * choose from product
-     */
+
+     // choose from product
+
     public By chooseProduct = By.xpath("(//button[@data-popuptarget='multi-select-product-popup'])[1]");
     public By searchForProduct = By.name("SearchDualList");
     public By selectProducts = By.xpath("(//label[@class='form-check-label stretched-link'])[1]");
