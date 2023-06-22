@@ -63,7 +63,6 @@ public class Locators {
     public By testMail = By.id("testEmail");
     public By testMailButton = By.xpath("//button[@id='emailTestButton']");
 
-    //na2s assert mesg ali btzhr w t5tfi
     public By previewMail = By.xpath("//button[@class='preview-email-action']");
     public By closePreviewReview = By.xpath("(//button[@aria-label='Close'])[1]");
     public By later = By.id("later-cta");
@@ -74,8 +73,24 @@ public class Locators {
     public By timeZone = By.className("select2-selection__arrow");
     public By searchTimeZone = By.className("select2-search__field");
 
-
-
-//na2s back klo , azai select time zone , date m4 3rfa 8er today mfish dynamic xpath,
+    public By assertTestMsg = By.xpath("//*[@class='success-validation hidden-by-default']");
 
 }
+
+//note date method not working
+
+/*public By selectDate(int days) {
+    String month = LocalDate.now().getMonth().getDisplayName(TextStyle.FULL, Locale.ENGLISH);
+    int day = LocalDate.now().plusDays(days).getDayOfMonth();
+    String output = String.format("//span[@class=‘dudp__date’ and contains(text(),‘%s’) and ancestor::div[@class=‘dudp__calendar’]/div[@class=‘dudp__cal-month-year’]/span[text()=‘%s’]]", day, month);
+    //  String xpathExpression = "//span[@class=‘dudp__date’ and contains(text(),‘%s’) and ancestor::div[@class=‘dudp__calendar’]/div[@class=‘dudp__cal-month-year’]/span[text()=‘%s’]]";
+    System.out.println(output);
+    return By.xpath(String.format(output));
+}
+
+//call
+seleniumActions.click(locators.generateCheckInDate(5));
+
+*/
+
+

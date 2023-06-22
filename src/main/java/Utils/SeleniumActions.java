@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class SeleniumActions extends SeleniumBase {
     public SeleniumActions() {
@@ -12,6 +13,7 @@ public class SeleniumActions extends SeleniumBase {
     public void click(By path) throws InterruptedException {
         Thread.sleep(1000);
         WebElement Click = driver.findElement(path);
+        wait.until(ExpectedConditions.elementToBeClickable(path));
         Click.click();
     }
 
@@ -45,5 +47,5 @@ public class SeleniumActions extends SeleniumBase {
         actions.moveToElement(Hover).perform();
     }
 
-
 }
+
