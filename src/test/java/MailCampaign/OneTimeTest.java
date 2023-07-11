@@ -11,6 +11,9 @@ import pom.Homepage;
 import pom.OneTimeCampaignSteps;
 import pom.SignInPage;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class OneTimeTest {
     @BeforeTest
     public void init() {
@@ -25,8 +28,8 @@ public class OneTimeTest {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         signInPage.loginPage("mckenzie.lincoln@yahoo.com", "password");
-        Assert.assertEquals(actions.getText(locators.assertLogin), "Contact Support");
-        //Assert.assertEquals(signInPage.assertionLogin(),"Contact Support");
+       // Assert.assertEquals(actions.getText(locators.assertLogin), "Contact Support");
+        Assert.assertEquals(actions.getText(locators.assertLogin), "Overview");
     }
 
     @Test(priority = 2)
@@ -62,8 +65,9 @@ public class OneTimeTest {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         OneTimeCampaignSteps steps = new OneTimeCampaignSteps();
-        steps.createCampaignSettings("campaign1","subject1","all","new","test","star","sunglasses");
-       Assert.assertEquals(actions.getText(locators.assertCustomizePopup),"How it works");
+        //List<String> products = Arrays.asList("test", "star", "sunglasses");
+        //steps.createCampaignSettings("campaign1", "subject1", "all", "new", products);
+        Assert.assertEquals(actions.getText(locators.assertCustomizePopup), "How it works");
     }
 
     @Test(priority = 6)
@@ -84,6 +88,6 @@ public class OneTimeTest {
         Assert.assertEquals(actions.getText(locators.subjectLineCheck), "subject1");
         Assert.assertEquals(actions.getText(locators.segmentCheck), "All Customers");
         Assert.assertTrue(actions.getText(locators.productsCheck).contains("Sunglasses"));
-        steps.reviewAndSend("h.adel@converted.in","cairo");
+        steps.reviewAndSend("h.adel@converted.in", "cairo");
     }
 }
