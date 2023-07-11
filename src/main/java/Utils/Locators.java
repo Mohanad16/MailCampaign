@@ -7,10 +7,14 @@ public class Locators {
     public By LoginEmail = By.id("email");
     public By LoginPassword = By.id("password");
     public By LoginButton = By.xpath("//button[@type='submit']");
-    public By assertLogin = By.xpath("//a[@id='contact_support']");
+    //public By assertLogin = By.xpath("//a[@id='contact_support']");
+    public By assertLogin = By.xpath("//h1[@class='title']");
+
     //home page locators
-    public By emailCampaignsLookup = By.xpath("//div[@class='main-sidebar-menu']/ul/li[7]/a/span");
-    public By createEmailCampaign = By.xpath("(//a[@class='sub-item-action'])[16]");
+    //public By emailCampaignsLookup = By.xpath("//div[@class='main-sidebar-menu']/ul/li[7]/a/span");
+    public By emailCampaignsLookup = By.xpath("//span[text()='Email Campaigns']");
+    //public By createEmailCampaign = By.xpath("(//a[@class='sub-item-action'])[16]");
+    public By createEmailCampaign = By.xpath("(//a[@class='sub-item-action'])[17]");
     public By assertHomepage = By.className("campaign-item-title");
 
     //steps to go inside chosen template
@@ -38,8 +42,8 @@ public class Locators {
     public By segmentSearch = By.xpath("//*[@aria-label='Search']");
     public By segmentSelection = By.xpath("//li[@role='option'][1]");
     public By productSetLookup = By.xpath("//*[@id='select2-productSets-container']");
-    public By productSetSearch = By.xpath("//*[@aria-controls='select2-productSets-results']");
-    public By productSetSelection = By.xpath("//li[@role='option'][1]");
+    public By productSetSearch = By.xpath("//input[@aria-controls='select2-productSets-results']");
+    public By productSetSelection = By.xpath("//li[@role='option'][2]");
 
      // choose from product
 

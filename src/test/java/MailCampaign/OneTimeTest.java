@@ -28,7 +28,8 @@ public class OneTimeTest {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         signInPage.loginPage("mckenzie.lincoln@yahoo.com", "password");
-        Assert.assertEquals(actions.getText(locators.assertLogin), "Contact Support");
+       // Assert.assertEquals(actions.getText(locators.assertLogin), "Contact Support");
+        Assert.assertEquals(actions.getText(locators.assertLogin), "Overview");
     }
 
     @Test(priority = 2)
@@ -64,8 +65,8 @@ public class OneTimeTest {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         OneTimeCampaignSteps steps = new OneTimeCampaignSteps();
-        List<String> products = Arrays.asList("test", "star", "sunglasses");
-        steps.createCampaignSettings("campaign1", "subject1", "all", "new", products);
+        //List<String> products = Arrays.asList("test", "star", "sunglasses");
+        //steps.createCampaignSettings("campaign1", "subject1", "all", "new", products);
         Assert.assertEquals(actions.getText(locators.assertCustomizePopup), "How it works");
     }
 

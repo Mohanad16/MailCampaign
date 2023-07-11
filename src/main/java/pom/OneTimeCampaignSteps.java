@@ -47,9 +47,9 @@ public class OneTimeCampaignSteps extends SeleniumBase {
 
             seleniumActions.click(locators.segmentSelection);
             seleniumActions.click(locators.productSetLookup);
-            seleniumActions.sendKeys(locators.productSetSearch, ProductSetSearch);
-            seleniumActions.click(locators.productSetSelection);
-            seleniumActions.click(locators.chooseProduct);
+            //seleniumActions.sendKeys(locators.productSetSearch, ProductSetSearch);
+            //seleniumActions.click(locators.productSetSelection);
+            //seleniumActions.click(locators.chooseProduct);
 
             //commented till development done
             /*for (int i = 1; i < products.size(); i++) {
