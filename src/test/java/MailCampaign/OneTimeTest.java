@@ -29,7 +29,6 @@ public class OneTimeTest {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         signInPage.loginPage("mckenzie.lincoln@yahoo.com", "password");
-       // Assert.assertEquals(actions.getText(locators.assertLogin), "Contact Support");
         Assert.assertEquals(actions.getText(locators.assertLogin), "Overview");
     }
 
