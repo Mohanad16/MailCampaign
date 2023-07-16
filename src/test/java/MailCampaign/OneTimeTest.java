@@ -22,7 +22,8 @@ public class OneTimeTest {
     }
 
     //test and assert that login is working
-    @Test(priority = 1)
+    @Test()
+
     public void login() throws InterruptedException {
         SignInPage signInPage = new SignInPage();
         SeleniumActions actions = new SeleniumActions();
@@ -32,7 +33,7 @@ public class OneTimeTest {
         Assert.assertEquals(actions.getText(locators.assertLogin), "Overview");
     }
 
-    @Test(priority = 2)
+    @Test(dependsOnMethods = "login")
     public void homePage() throws InterruptedException {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
@@ -41,7 +42,7 @@ public class OneTimeTest {
         Assert.assertEquals(actions.getText(locators.assertHomepage), "One Time Campaign");
     }
 
-    @Test(priority = 3)
+    @Test(dependsOnMethods ="homePage")
     public void selectOneTimeCampaign() throws InterruptedException {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
@@ -50,7 +51,7 @@ public class OneTimeTest {
         Assert.assertEquals(actions.getText(locators.assertOneTimeCampaign), "Shopping Season Back To School");
     }
 
-    @Test(priority = 4)
+    @Test(dependsOnMethods = "selectOneTimeCampaign")
     public void chooseCampaignTemplate() throws InterruptedException {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
@@ -59,7 +60,7 @@ public class OneTimeTest {
         Assert.assertEquals(actions.getText(locators.assertCampaignDetails), "Defualt Template Preview");
     }
 
-    @Test(priority = 5)
+    @Test(dependsOnMethods = "chooseCampaignTemplate")
 
     public void createCampaignSettings() throws InterruptedException {
         SeleniumActions actions = new SeleniumActions();
@@ -70,7 +71,7 @@ public class OneTimeTest {
         Assert.assertEquals(actions.getText(locators.assertCustomizePopup), "How it works");
     }
 
-    @Test(priority = 6)
+    @Test(dependsOnMethods = "createCampaignSettings")
     public void customizeYourDesign() throws InterruptedException {
         OneTimeCampaignSteps steps = new OneTimeCampaignSteps();
         SeleniumActions actions = new SeleniumActions();
@@ -79,7 +80,7 @@ public class OneTimeTest {
         Assert.assertEquals(actions.getText(locators.assertReviewStep), "Campaign Content");
     }
 
-    @Test(priority = 7)
+    @Test(dependsOnMethods = "customizeYourDesign")
     public void reviewAndSend() throws InterruptedException {
         OneTimeCampaignSteps steps = new OneTimeCampaignSteps();
         SeleniumActions actions = new SeleniumActions();
