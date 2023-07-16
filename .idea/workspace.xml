@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50d4f062-e1e5-4ce4-9c80-4ce4061138d8" name="Changes" comment="dependencies2">
-      <change afterPath="$PROJECT_DIR$/CheckOnlyOneTimeCampaignSteps.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MailCampaign/CheckAllTemplates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MailCampaign/CheckOnlyOneTimeCampaignSteps.java" afterDir="false" />
+    <list default="true" id="50d4f062-e1e5-4ce4-9c80-4ce4061138d8" name="Changes" comment="mohanad issue">
+      <change afterPath="$PROJECT_DIR$/CheckAllTemplate.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CheckOnlyOneTimeCampaignSteps.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CheckOnlyOneTimeCampaignSteps.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Locators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pom/CreateCampaigns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/CreateCampaigns.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MailCampaign/CheckAllTemplates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MailCampaign/CheckAllTemplates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MailCampaign/OneTimeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MailCampaign/OneTimeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +56,17 @@
       <recent name="C:\Users\Heba\IdeaProjects\checkout" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Heba/IdeaProjects/checkout/CheckOnlyOneTimeCampaignSteps.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/Heba/IdeaProjects/checkout/CheckAllTemplate.xml">
+    <configuration name="C:/Users/Heba/IdeaProjects/checkout/CheckAllTemplate.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OneTimeMailCampaign" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/CheckAllTemplate.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/Heba/IdeaProjects/checkout/CheckOnlyOneTimeCampaignSteps.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OneTimeMailCampaign" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/CheckOnlyOneTimeCampaignSteps.xml" />
@@ -102,30 +115,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OneTimeTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OneTimeMailCampaign" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="MailCampaign.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="MailCampaign" />
-      <option name="MAIN_CLASS_NAME" value="MailCampaign.OneTimeTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Heba/IdeaProjects/checkout/CheckAllTemplate.xml" />
+        <item itemvalue="TestNG.C:/Users/Heba/IdeaProjects/checkout/one-time campiagn.xml" />
         <item itemvalue="TestNG.C:/Users/Heba/IdeaProjects/checkout/CheckOnlyOneTimeCampaignSteps.xml" />
         <item itemvalue="TestNG.C:/Users/Heba/IdeaProjects/checkout/Choose CampaignTemplate.xml" />
         <item itemvalue="TestNG.CheckOnlyOneTimeCampaignSteps.chooseCampaignTemplate" />
-        <item itemvalue="TestNG.C:/Users/Heba/IdeaProjects/checkout/one-time campiagn.xml" />
-        <item itemvalue="TestNG.OneTimeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689505819085</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="mohanad issue">
+      <created>1689510370241</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689510370241</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,6 +195,7 @@
     <MESSAGE value="checking" />
     <MESSAGE value="dependencies" />
     <MESSAGE value="dependencies2" />
-    <option name="LAST_COMMIT_MESSAGE" value="dependencies2" />
+    <MESSAGE value="mohanad issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="mohanad issue" />
   </component>
 </project>

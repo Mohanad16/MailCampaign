@@ -1,9 +1,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="One-Time mail campaign">
 
-    <test name="Test all steps onetime campaign">
+    <test name="Test all template one time campaign">
         <classes>
-            <class name="MailCampaign.CheckOnlyOneTimeCampaignSteps"/>
+            <class name="MailCampaign.CheckAllTemplates"/>
         </classes>
     </test>
 

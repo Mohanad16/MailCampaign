@@ -46,8 +46,8 @@ public class OneTimeTest {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
-        oneTime.oneTimeCampaign();
-        Assert.assertEquals(actions.getText(locators.assertOneTimeCampaign), "Shopping Season Back To School");
+        oneTime.oneTimeCampaign(locators.hoverOnBackToSchool , locators.selectBackToSchool);
+        Assert.assertEquals(actions.getText(locators.assertBackToSchool), "Shopping Season Back To School");
     }
 
     @Test(dependsOnMethods = "selectOneTimeCampaign")

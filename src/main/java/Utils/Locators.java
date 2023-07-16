@@ -20,9 +20,9 @@ public class Locators {
     //steps to go inside chosen template
     public By oneTimeNextButton = By.xpath("//button[text()='Next']");
     public By templateGroups = By.xpath("//div[@data-group-id='all']");
-    public By hoverOnTemplate = By.xpath("//div[@data-template-type='83']");
-    public By selectTemplate = By.xpath("//*[@data-template-type='83']//button[text()='Select']");
-    public By assertOneTimeCampaign = By.xpath("//*[text()='Shopping Season Back To School']");
+    public By hoverOnBackToSchool = By.xpath("//div[@data-template-type='83']");
+    public By selectBackToSchool = By.xpath("//*[@data-template-type='83']//button[text()='Select']");
+    public By assertBackToSchool = By.xpath("//*[text()='Shopping Season Back To School']");
 
 
     //locators chooseCampaignTemplate
@@ -78,6 +78,9 @@ public class Locators {
     public By searchTimeZone = By.className("select2-search__field");
 
     public By assertTestMsg = By.xpath("//*[@class='success-validation hidden-by-default']");
+
+    //back
+    public  By backButton=By.xpath("//button[text()='Back']");
 
 }
 
