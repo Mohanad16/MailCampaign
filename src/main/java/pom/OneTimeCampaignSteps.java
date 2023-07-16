@@ -47,8 +47,8 @@ public class OneTimeCampaignSteps extends SeleniumBase {
 
             seleniumActions.click(locators.segmentSelection);
             seleniumActions.click(locators.productSetLookup);
-            //seleniumActions.sendKeys(locators.productSetSearch, ProductSetSearch);
-            //seleniumActions.click(locators.productSetSelection);
+            seleniumActions.sendKeys(locators.productSetSearch, ProductSetSearch);
+            seleniumActions.click(locators.productSetSelection);
             //seleniumActions.click(locators.chooseProduct);
 
             //commented till development done
@@ -58,8 +58,8 @@ public class OneTimeCampaignSteps extends SeleniumBase {
                 seleniumActions.click(locators.selectProducts);
             }
             seleniumActions.clear(locators.searchForProduct);// deleted when issue solved
-            seleniumActions.click(locators.addProductButton);
-            seleniumActions.click(locators.oneTimeNextButton);*/
+            seleniumActions.click(locators.addProductButton);*/
+            seleniumActions.click(locators.oneTimeNextButton);
 
             wait.until(ExpectedConditions.visibilityOfElementLocated(locators.assertCustomizePopup));
         } catch (InterruptedException e) {

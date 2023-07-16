@@ -65,8 +65,8 @@ public class OneTimeTest {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         OneTimeCampaignSteps steps = new OneTimeCampaignSteps();
-        //List<String> products = Arrays.asList("test", "star", "sunglasses");
-        //steps.createCampaignSettings("campaign1", "subject1", "all", "new", products);
+        List<String> products = Arrays.asList("test", "star", "sunglasses");
+        steps.createCampaignSettings("campaign1", "subject1", "all", "new", products);
         Assert.assertEquals(actions.getText(locators.assertCustomizePopup), "How it works");
     }
 

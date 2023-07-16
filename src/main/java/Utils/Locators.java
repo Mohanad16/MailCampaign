@@ -43,7 +43,7 @@ public class Locators {
     public By segmentSelection = By.xpath("//li[@role='option'][1]");
     public By productSetLookup = By.xpath("//*[@id='select2-productSets-container']");
     public By productSetSearch = By.xpath("//input[@aria-controls='select2-productSets-results']");
-    public By productSetSelection = By.xpath("//li[@role='option'][2]");
+    public By productSetSelection = By.xpath("//li[@role='option'][1]");
 
      // choose from product
 
