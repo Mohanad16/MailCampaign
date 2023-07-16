@@ -42,6 +42,7 @@ public class CheckAllTemplates {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
+        oneTime.selectCampaignType();
         oneTime.oneTimeCampaign(locators.hoverOnBackToSchool, locators.selectBackToSchool);
         Assert.assertEquals(actions.getText(locators.assertBackToSchool), "Shopping Season Back To School");
         actions.click(locators.backButton);
