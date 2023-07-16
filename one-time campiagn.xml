@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="one-time mail campaign">
 
-    <test name="Test full steps in one-time mail campaign">
+    <test name="Test Full Steps in One-Time Mail Campaign">
         <classes>
             <class name="MailCampaign.OneTimeTest"/>
         </classes>
