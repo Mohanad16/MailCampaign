@@ -52,8 +52,8 @@ public class CheckAllTemplates {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
-        oneTime.oneTimeCampaign(locators.hoverOnBackToSchool, locators.selectBackToSchool);
-        Assert.assertEquals(actions.getText(locators.assertBackToSchool), "Shopping Season Back To School");
+        oneTime.oneTimeCampaign(locators.hoverOnBackInStock, locators.selectBackInStock);
+        Assert.assertEquals(actions.getText(locators.assertBackInStock), "Back In Stock");
         actions.click(locators.backButton);
 
     }
@@ -63,8 +63,8 @@ public class CheckAllTemplates {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
-        oneTime.oneTimeCampaign(locators.hoverOnBackToSchool, locators.selectBackToSchool);
-        Assert.assertEquals(actions.getText(locators.assertBackToSchool), "Shopping Season Back To School");
+        oneTime.oneTimeCampaign(locators.hoverOnDiscountOffer, locators.selectDiscountOffer);
+        Assert.assertEquals(actions.getText(locators.assertDiscountOffer), "Discount On Selected Items");
         actions.click(locators.backButton);
 
     }
@@ -74,8 +74,8 @@ public class CheckAllTemplates {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
-        oneTime.oneTimeCampaign(locators.hoverOnBackToSchool, locators.selectBackToSchool);
-        Assert.assertEquals(actions.getText(locators.assertBackToSchool), "Shopping Season Back To School");
+        oneTime.oneTimeCampaign(locators.hoverOnShoppingSeasonSummer, locators.selectShoppingSeasonSummer);
+        Assert.assertEquals(actions.getText(locators.assertShoppingSeasonSummer), "Shopping Season Summer Sale");
         actions.click(locators.backButton);
 
     }
@@ -85,8 +85,8 @@ public class CheckAllTemplates {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
-        oneTime.oneTimeCampaign(locators.hoverOnBackToSchool, locators.selectBackToSchool);
-        Assert.assertEquals(actions.getText(locators.assertBackToSchool), "Shopping Season Back To School");
+        oneTime.oneTimeCampaign(locators.hoverOn24FlashSale, locators.select24FlashSale);
+        Assert.assertEquals(actions.getText(locators.assert24FlashSale), "24 Hrs Flash Sale");
         actions.click(locators.backButton);
 
     }
@@ -96,8 +96,8 @@ public class CheckAllTemplates {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
-        oneTime.oneTimeCampaign(locators.hoverOnBackToSchool, locators.selectBackToSchool);
-        Assert.assertEquals(actions.getText(locators.assertBackToSchool), "Shopping Season Back To School");
+        oneTime.oneTimeCampaign(locators.hoverOn24FlashSale2, locators.select24FlashSale2);
+        Assert.assertEquals(actions.getText(locators.assert24FlashSale2), "24 Hrs FLASH SALE");
         actions.click(locators.backButton);
 
     }
@@ -107,8 +107,8 @@ public class CheckAllTemplates {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
-        oneTime.oneTimeCampaign(locators.hoverOnBackToSchool, locators.selectBackToSchool);
-        Assert.assertEquals(actions.getText(locators.assertBackToSchool), "Shopping Season Back To School");
+        oneTime.oneTimeCampaign(locators.hoverOnLaborDay, locators.selectLaborDay);
+        Assert.assertEquals(actions.getText(locators.assertLaborDay), "Labor Day");
         actions.click(locators.backButton);
 
     }
@@ -118,18 +118,19 @@ public class CheckAllTemplates {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
-        oneTime.oneTimeCampaign(locators.hoverOnBackToSchool, locators.selectBackToSchool);
-        Assert.assertEquals(actions.getText(locators.assertBackToSchool), "Shopping Season Back To School");
+        oneTime.oneTimeCampaign(locators.hoverOnEbookReleased, locators.selectEbookReleased);
+        Assert.assertEquals(actions.getText(locators.assertEbookReleased), "New Ebook Released");
         actions.click(locators.backButton);
 
     }
+
     @Test(dependsOnMethods = "selectEbookReleasedTemplate")
     public void selectSummerSaleTemplate() throws InterruptedException {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
-        oneTime.oneTimeCampaign(locators.hoverOnBackToSchool, locators.selectBackToSchool);
-        Assert.assertEquals(actions.getText(locators.assertBackToSchool), "Shopping Season Back To School");
+        oneTime.oneTimeCampaign(locators.hoverOnSummerSale, locators.selectSummerSale);
+        Assert.assertEquals(actions.getText(locators.assertSummerSale), "Summer Sale");
         actions.click(locators.backButton);
 
     }
@@ -139,18 +140,19 @@ public class CheckAllTemplates {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
-        oneTime.oneTimeCampaign(locators.hoverOnBackToSchool, locators.selectBackToSchool);
-        Assert.assertEquals(actions.getText(locators.assertBackToSchool), "Shopping Season Back To School");
+        oneTime.oneTimeCampaign(locators.hoverOnWomenDay, locators.selectWomenDay);
+        Assert.assertEquals(actions.getText(locators.assertWomenDay), "Women's Day");
         actions.click(locators.backButton);
 
     }
+
     @Test(dependsOnMethods = "selectWomenDayTemplate")
     public void selectHelloBlackFridayTemplate() throws InterruptedException {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
-        oneTime.oneTimeCampaign(locators.hoverOnBackToSchool, locators.selectBackToSchool);
-        Assert.assertEquals(actions.getText(locators.assertBackToSchool), "Shopping Season Back To School");
+        oneTime.oneTimeCampaign(locators.hoverOnBlackFriday, locators.selectBlackFriday);
+        Assert.assertEquals(actions.getText(locators.assertBlackFriday), "Hello Black Friday");
         actions.click(locators.backButton);
 
     }
@@ -160,18 +162,19 @@ public class CheckAllTemplates {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
-        oneTime.oneTimeCampaign(locators.hoverOnBackToSchool, locators.selectBackToSchool);
-        Assert.assertEquals(actions.getText(locators.assertBackToSchool), "Shopping Season Back To School");
+        oneTime.oneTimeCampaign(locators.hoverOnDiscountEmail, locators.selectDiscountEmail);
+        Assert.assertEquals(actions.getText(locators.assertDiscountEmail), "Used For Discount Email");
         actions.click(locators.backButton);
 
     }
+
     @Test(dependsOnMethods = "selectDiscountEmailTemplate")
     public void selectWelcomeEmailTemplate() throws InterruptedException {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
-        oneTime.oneTimeCampaign(locators.hoverOnBackToSchool, locators.selectBackToSchool);
-        Assert.assertEquals(actions.getText(locators.assertBackToSchool), "Shopping Season Back To School");
+        oneTime.oneTimeCampaign(locators.hoverOnWelcomeEmail, locators.selectWelcomeEmail);
+        Assert.assertEquals(actions.getText(locators.assertWelcomeEmail), "Welcome Email");
         actions.click(locators.backButton);
 
     }

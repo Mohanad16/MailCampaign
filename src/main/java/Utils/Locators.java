@@ -82,22 +82,59 @@ public class Locators {
     //back
     public  By backButton=By.xpath("//button[text()='Back']");
 
+
+    //check all templates locators and it's assertions
+    public By hoverOnBackInStock = By.xpath("//div[@data-template-type='85']");
+    public By selectBackInStock = By.xpath("//*[@data-template-type='85']//button[text()='Select']");
+    public By assertBackInStock = By.xpath("//*[text()='Back In Stock']");
+
+    public By hoverOnDiscountOffer = By.xpath("//div[@data-template-type='87']");
+    public By selectDiscountOffer = By.xpath("//*[@data-template-type='87']//button[text()='Select']");
+    public By assertDiscountOffer = By.xpath("//*[text()='Discount On Selected Items']");
+
+    public By hoverOnShoppingSeasonSummer = By.xpath("//div[@data-template-type='89']");
+    public By selectShoppingSeasonSummer = By.xpath("//*[@data-template-type='89']//button[text()='Select']");
+    public By assertShoppingSeasonSummer = By.xpath("//*[text()='Shopping Season Summer Sale']");
+
+    public By hoverOn24FlashSale = By.xpath("//div[@data-template-type='91']");
+    public By select24FlashSale = By.xpath("//*[@data-template-type='91']//button[text()='Select']");
+    public By assert24FlashSale = By.xpath("//*[text()='24 Hrs Flash Sale']");
+
+    public By hoverOn24FlashSale2 = By.xpath("//div[@data-template-type='174']");
+    public By select24FlashSale2 = By.xpath("//*[@data-template-type='174']//button[text()='Select']");
+    public By assert24FlashSale2 = By.xpath("//*[text()='24 Hrs FLASH SALE']");
+
+    public By hoverOnLaborDay = By.xpath("//div[@data-template-type='177']");
+    public By selectLaborDay = By.xpath("//*[@data-template-type='177']//button[text()='Select']");
+    public By assertLaborDay = By.xpath("//*[text()='Labor Day']");
+
+    public By hoverOnEbookReleased = By.xpath("//div[@data-template-type='180']");
+    public By selectEbookReleased = By.xpath("//*[@data-template-type='180']//button[text()='Select']");
+    public By assertEbookReleased = By.xpath("//*[text()='New Ebook Released']");
+
+    public By hoverOnSummerSale = By.xpath("//div[@data-template-type='183']");
+    public By selectSummerSale = By.xpath("//*[@data-template-type='183']//button[text()='Select']");
+    public By assertSummerSale = By.xpath("//*[text()='Summer Sale']");
+
+    public By hoverOnWomenDay = By.xpath("//div[@data-template-type='186']");
+    public By selectWomenDay = By.xpath("//*[@data-template-type='186']//button[text()='Select']");
+    public By assertWomenDay = By.xpath("//*[text()='Women's Day']");
+
+    public By hoverOnBlackFriday = By.xpath("//div[@data-template-type='188']");
+    public By selectBlackFriday = By.xpath("//*[@data-template-type='188']//button[text()='Select']");
+    public By assertBlackFriday = By.xpath("//*[text()='Hello Black Friday']");
+
+    public By hoverOnDiscountEmail = By.xpath("//div[@data-template-type='191']");
+    public By selectDiscountEmail = By.xpath("//*[@data-template-type='191']//button[text()='Select']");
+    public By assertDiscountEmail = By.xpath("//*[text()='Used For Discount Email']");
+
+    public By hoverOnWelcomeEmail = By.xpath("//div[@data-template-type='193']");
+    public By selectWelcomeEmail = By.xpath("//*[@data-template-type='193']//button[text()='Select']");
+    public By assertWelcomeEmail = By.xpath("//*[text()='Welcome Email']");
+
+
 }
 
-//note date method not working
 
-/*public By selectDate(int days) {
-    String month = LocalDate.now().getMonth().getDisplayName(TextStyle.FULL, Locale.ENGLISH);
-    int day = LocalDate.now().plusDays(days).getDayOfMonth();
-    String output = String.format("//span[@class=‘dudp__date’ and contains(text(),‘%s’) and ancestor::div[@class=‘dudp__calendar’]/div[@class=‘dudp__cal-month-year’]/span[text()=‘%s’]]", day, month);
-    //  String xpathExpression = "//span[@class=‘dudp__date’ and contains(text(),‘%s’) and ancestor::div[@class=‘dudp__calendar’]/div[@class=‘dudp__cal-month-year’]/span[text()=‘%s’]]";
-    System.out.println(output);
-    return By.xpath(String.format(output));
-}
-
-//call
-seleniumActions.click(locators.generateCheckInDate(5));
-
-*/
 
 
