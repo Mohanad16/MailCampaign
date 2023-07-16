@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50d4f062-e1e5-4ce4-9c80-4ce4061138d8" name="Changes" comment="checking">
+    <list default="true" id="50d4f062-e1e5-4ce4-9c80-4ce4061138d8" name="Changes" comment="dependencies">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Locators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pom/OneTimeCampaignSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/OneTimeCampaignSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MailCampaign/OneTimeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MailCampaign/OneTimeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="mail_branch1" />
+        <entry key="$PROJECT_DIR$" value="check_branch" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,7 +48,17 @@
       <recent name="pom" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.OneTimeTest">
+  <component name="RunManager" selected="TestNG.C:/Users/Heba/IdeaProjects/checkout/one-time campiagn.xml">
+    <configuration name="C:/Users/Heba/IdeaProjects/checkout/one-time campiagn.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OneTimeMailCampaign" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/one-time campiagn.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OneTimeTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OneTimeMailCampaign" />
       <extension name="coverage">
@@ -88,6 +96,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Heba/IdeaProjects/checkout/one-time campiagn.xml" />
         <item itemvalue="TestNG.OneTimeTest" />
         <item itemvalue="TestNG.OneTimeTest.createMail" />
       </list>
@@ -116,7 +125,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689085113125</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="dependencies">
+      <created>1689504962255</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689504962256</updated>
+    </task>
+    <task id="LOCAL-00004" summary="dependencies">
+      <created>1689505307242</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689505307242</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,6 +156,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update1" />
     <MESSAGE value="checking" />
-    <option name="LAST_COMMIT_MESSAGE" value="checking" />
+    <MESSAGE value="dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="dependencies" />
   </component>
 </project>
