@@ -22,8 +22,7 @@ public class CreateCampaigns {
         try {
             SeleniumActions seleniumActions = new SeleniumActions();
             Locators locators = new Locators();
-           // seleniumActions.click(locators.oneTimeNextButton);
-            //seleniumActions.click(locators.templateGroups);
+
             wait.until(ExpectedConditions.visibilityOfElementLocated(locators.hoverOnBackToSchool));
             seleniumActions.hoverOnElement(hoverPath);
             seleniumActions.click(clickPath);

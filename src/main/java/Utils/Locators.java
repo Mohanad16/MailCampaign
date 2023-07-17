@@ -86,7 +86,7 @@ public class Locators {
     //check all templates locators and it's assertions
     public By hoverOnBackInStock = By.xpath("//div[@data-template-type='85']");
     public By selectBackInStock = By.xpath("//*[@data-template-type='85']//button[text()='Select']");
-    public By assertBackInStock = By.xpath("//*[text()='Back In Stock']");
+    public By assertBackInStock = By.xpath("//*[text()='Back in stock']");
 
     public By hoverOnDiscountOffer = By.xpath("//div[@data-template-type='87']");
     public By selectDiscountOffer = By.xpath("//*[@data-template-type='87']//button[text()='Select']");
@@ -110,7 +110,7 @@ public class Locators {
 
     public By hoverOnEbookReleased = By.xpath("//div[@data-template-type='180']");
     public By selectEbookReleased = By.xpath("//*[@data-template-type='180']//button[text()='Select']");
-    public By assertEbookReleased = By.xpath("//*[text()='New Ebook Released']");
+    public By assertEbookReleased = By.xpath("//*[text()='New ebook released']");
 
     public By hoverOnSummerSale = By.xpath("//div[@data-template-type='183']");
     public By selectSummerSale = By.xpath("//*[@data-template-type='183']//button[text()='Select']");
