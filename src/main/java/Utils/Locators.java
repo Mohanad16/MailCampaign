@@ -90,7 +90,7 @@ public class Locators {
 
     public By hoverOnDiscountOffer = By.xpath("//div[@data-template-type='87']");
     public By selectDiscountOffer = By.xpath("//*[@data-template-type='87']//button[text()='Select']");
-    public By assertDiscountOffer = By.xpath("//*[text()='Discount On Selected Items']");
+    public By assertDiscountOffer = By.xpath("//*[text()='discount on selected items']");
 
     public By hoverOnShoppingSeasonSummer = By.xpath("//div[@data-template-type='89']");
     public By selectShoppingSeasonSummer = By.xpath("//*[@data-template-type='89']//button[text()='Select']");
@@ -102,7 +102,7 @@ public class Locators {
 
     public By hoverOn24FlashSale2 = By.xpath("//div[@data-template-type='174']");
     public By select24FlashSale2 = By.xpath("//*[@data-template-type='174']//button[text()='Select']");
-    public By assert24FlashSale2 = By.xpath("//*[text()='24 Hrs FLASH SALE']");
+    public By assert24FlashSale2 = By.xpath("//*[text()='24 hrs FLASH SALE']");
 
     public By hoverOnLaborDay = By.xpath("//div[@data-template-type='177']");
     public By selectLaborDay = By.xpath("//*[@data-template-type='177']//button[text()='Select']");
@@ -126,7 +126,7 @@ public class Locators {
 
     public By hoverOnDiscountEmail = By.xpath("//div[@data-template-type='191']");
     public By selectDiscountEmail = By.xpath("//*[@data-template-type='191']//button[text()='Select']");
-    public By assertDiscountEmail = By.xpath("//*[text()='Used For Discount Email']");
+    public By assertDiscountEmail = By.xpath("//*[text()='Used for Discount Email']");
 
     public By hoverOnWelcomeEmail = By.xpath("//div[@data-template-type='193']");
     public By selectWelcomeEmail = By.xpath("//*[@data-template-type='193']//button[text()='Select']");
