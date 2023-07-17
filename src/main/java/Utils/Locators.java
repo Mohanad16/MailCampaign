@@ -45,7 +45,7 @@ public class Locators {
     public By productSetSearch = By.xpath("//input[@aria-controls='select2-productSets-results']");
     public By productSetSelection = By.xpath("//li[@role='option'][1]");
 
-     // choose from product
+    // choose from product
 
     public By chooseProduct = By.xpath("(//button[@data-popuptarget='multi-select-product-popup'])[1]");
     public By searchForProduct = By.name("SearchDualList");
@@ -80,7 +80,7 @@ public class Locators {
     public By assertTestMsg = By.xpath("//*[@class='success-validation hidden-by-default']");
 
     //back
-    public  By backButton=By.xpath("//button[text()='Back']");
+    public By backButton = By.xpath("//button[text()='Back']");
 
 
     //check all templates locators and it's assertions
@@ -118,7 +118,7 @@ public class Locators {
 
     public By hoverOnWomenDay = By.xpath("//div[@data-template-type='186']");
     public By selectWomenDay = By.xpath("//*[@data-template-type='186']//button[text()='Select']");
-    public By assertWomenDay = By.xpath("//*[text()='Women's Day']");
+    public By assertWomenDay = By.xpath("//*[contains(text(),'Women')]");
 
     public By hoverOnBlackFriday = By.xpath("//div[@data-template-type='188']");
     public By selectBlackFriday = By.xpath("//*[@data-template-type='188']//button[text()='Select']");
