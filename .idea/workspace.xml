@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50d4f062-e1e5-4ce4-9c80-4ce4061138d8" name="Changes" comment="functions completed except push">
+    <list default="true" id="50d4f062-e1e5-4ce4-9c80-4ce4061138d8" name="Changes" comment="functions completed except push2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Locators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pom/CreateCampaigns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/CreateCampaigns.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MailCampaign/OneTimeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MailCampaign/OneTimeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +39,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/Heba/IdeaProjects/OneTimeMailCampaign/src/test/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Heba/IdeaProjects/checkout&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Heba/IdeaProjects/last update&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -180,8 +177,26 @@
       <option name="project" value="LOCAL" />
       <updated>1689517568288</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="functions completed except push2">
+      <created>1689518371796</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1689518371796</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -201,6 +216,7 @@
     <MESSAGE value="dependencies2" />
     <MESSAGE value="mohanad issue" />
     <MESSAGE value="functions completed except push" />
-    <option name="LAST_COMMIT_MESSAGE" value="functions completed except push" />
+    <MESSAGE value="functions completed except push2" />
+    <option name="LAST_COMMIT_MESSAGE" value="functions completed except push2" />
   </component>
 </project>
