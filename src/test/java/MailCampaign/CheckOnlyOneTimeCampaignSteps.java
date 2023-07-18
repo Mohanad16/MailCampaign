@@ -32,7 +32,8 @@ public class CheckOnlyOneTimeCampaignSteps {
         Assert.assertEquals(actions.getText(locators.assertLogin), "Overview");
         driver.navigate().to("https://app-stg.converted.in/dashboard/campaigns/email/one-time-campaign/templates/83/list");
     }
-   @Test(dependsOnMethods ="login" )
+
+    @Test(dependsOnMethods = "login")
     public void chooseCampaignTemplate() throws InterruptedException {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
@@ -40,6 +41,7 @@ public class CheckOnlyOneTimeCampaignSteps {
         steps.chooseCampaignTemplate();
         Assert.assertEquals(actions.getText(locators.assertCampaignDetails), "Defualt Template Preview");
     }
+
     @Test(dependsOnMethods = "chooseCampaignTemplate")
 
     public void createCampaignSettings() throws InterruptedException {

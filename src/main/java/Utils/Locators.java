@@ -7,6 +7,7 @@ public class Locators {
     public By LoginEmail = By.id("email");
     public By LoginPassword = By.id("password");
     public By LoginButton = By.xpath("//button[@type='submit']");
+
     //public By assertLogin = By.xpath("//a[@id='contact_support']");
     public By assertLogin = By.xpath("//h1[@class='title']");
 
@@ -45,7 +46,7 @@ public class Locators {
     public By productSetSearch = By.xpath("//input[@aria-controls='select2-productSets-results']");
     public By productSetSelection = By.xpath("//li[@role='option'][1]");
 
-    // choose from product
+    // choose from product (these locators are inactive because there are some changes in this field)
 
     public By chooseProduct = By.xpath("(//button[@data-popuptarget='multi-select-product-popup'])[1]");
     public By searchForProduct = By.name("SearchDualList");
@@ -79,7 +80,7 @@ public class Locators {
 
     public By assertTestMsg = By.xpath("//*[@class='success-validation hidden-by-default']");
 
-    //back
+    //back button
     public By backButton = By.xpath("//button[text()='Back']");
 
 

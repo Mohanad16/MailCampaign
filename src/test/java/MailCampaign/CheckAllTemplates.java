@@ -142,7 +142,7 @@ public class CheckAllTemplates {
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
         oneTime.oneTimeCampaign(locators.hoverOnWomenDay, locators.selectWomenDay);
-        Assert.assertEquals(actions.getText(locators.assertWomenDay), "Women's Day");
+        Assert.assertEquals(actions.getText(locators.assertWomenDay), "Women'S Day");
         actions.click(locators.backButton);
 
     }

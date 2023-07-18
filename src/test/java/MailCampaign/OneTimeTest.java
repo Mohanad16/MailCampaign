@@ -41,13 +41,13 @@ public class OneTimeTest {
         Assert.assertEquals(actions.getText(locators.assertHomepage), "One Time Campaign");
     }
 
-    @Test(dependsOnMethods ="homePage")
+    @Test(dependsOnMethods = "homePage")
     public void selectOneTimeCampaign() throws InterruptedException {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
         oneTime.selectCampaignType();
-        oneTime.oneTimeCampaign(locators.hoverOnBackToSchool , locators.selectBackToSchool);
+        oneTime.oneTimeCampaign(locators.hoverOnBackToSchool, locators.selectBackToSchool);
         Assert.assertEquals(actions.getText(locators.assertBackToSchool), "Shopping Season Back To School");
     }
 

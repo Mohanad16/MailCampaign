@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50d4f062-e1e5-4ce4-9c80-4ce4061138d8" name="Changes" comment="functions completed except push4">
+    <list default="true" id="50d4f062-e1e5-4ce4-9c80-4ce4061138d8" name="Changes" comment="functions completed except push5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CheckAllTemplate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/checkAllTemplate.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Locators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pom/CreateCampaigns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/CreateCampaigns.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MailCampaign/CheckAllTemplates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MailCampaign/CheckAllTemplates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MailCampaign/CheckOnlyOneTimeCampaignSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MailCampaign/CheckOnlyOneTimeCampaignSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MailCampaign/OneTimeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MailCampaign/OneTimeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,7 @@
       <recent name="C:\Users\Heba\IdeaProjects\checkout" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Mohanad/OneDrive/Documents/GitHub/MailCampaign/checkAllTemplate.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/Heba/IdeaProjects/checkout/one-time campiagn.xml">
     <configuration name="C:/Users/Heba/IdeaProjects/checkout/CheckAllTemplate.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OneTimeMailCampaign" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/CheckAllTemplate.xml" />
@@ -106,10 +107,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/Mohanad/OneDrive/Documents/GitHub/MailCampaign/checkAllTemplate.xml" />
-        <item itemvalue="TestNG.C:/Users/Heba/IdeaProjects/checkout/CheckAllTemplate.xml" />
         <item itemvalue="TestNG.C:/Users/Heba/IdeaProjects/checkout/one-time campiagn.xml" />
         <item itemvalue="TestNG.C:/Users/Heba/IdeaProjects/checkout/CheckOnlyOneTimeCampaignSteps.xml" />
+        <item itemvalue="TestNG.C:/Users/Mohanad/OneDrive/Documents/GitHub/MailCampaign/checkAllTemplate.xml" />
+        <item itemvalue="TestNG.C:/Users/Heba/IdeaProjects/checkout/CheckAllTemplate.xml" />
         <item itemvalue="TestNG.C:/Users/Heba/IdeaProjects/checkout/Choose CampaignTemplate.xml" />
       </list>
     </recent_temporary>
@@ -187,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689598814225</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="functions completed except push5">
+      <option name="closed" value="true" />
+      <created>1689600151027</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1689600151027</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -221,6 +230,7 @@
     <MESSAGE value="functions completed except push" />
     <MESSAGE value="functions completed except push2" />
     <MESSAGE value="functions completed except push4" />
-    <option name="LAST_COMMIT_MESSAGE" value="functions completed except push4" />
+    <MESSAGE value="functions completed except push5" />
+    <option name="LAST_COMMIT_MESSAGE" value="functions completed except push5" />
   </component>
 </project>
