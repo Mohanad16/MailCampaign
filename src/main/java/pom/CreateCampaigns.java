@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
+import static Utils.SeleniumActions.Waits.VISIBILITY_OF_ELEMENT;
 import static Utils.SeleniumBase.wait;
 
 public class CreateCampaigns {
@@ -22,12 +23,12 @@ public class CreateCampaigns {
 
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
-
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locators.hoverOnBackToSchool));
+        actions.waitUntil(VISIBILITY_OF_ELEMENT,locators.hoverOnBackToSchool);
+       // wait.until(ExpectedConditions.visibilityOfElementLocated(locators.hoverOnBackToSchool));
         actions.hoverOnElement(hoverPath);
         actions.click(clickPath);
         String oneTimeCampaign = actions.getText(locators.assertBackToSchool);
         Assert.assertEquals(oneTimeCampaign, "Shopping Season Back To School","one-time campaign is work");
-        Assert.assertNull(oneTimeCampaign, "assertion one-time campaign is null");
+        Assert.assertNotNull(oneTimeCampaign, "assertion one-time campaign is null");
     }
 }

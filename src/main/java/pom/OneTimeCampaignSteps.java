@@ -10,22 +10,25 @@ import org.testng.Assert;
 
 import java.util.List;
 
+import static Utils.SeleniumActions.Waits.VISIBILITY_OF_ELEMENT;
+
 public class OneTimeCampaignSteps extends SeleniumBase {
     public void chooseCampaignTemplate() {
 
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
-
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locators.hoverCampaignTemplate));
+        actions.waitUntil(VISIBILITY_OF_ELEMENT, locators.hoverCampaignTemplate);
+        // wait.until(ExpectedConditions.visibilityOfElementLocated(locators.hoverCampaignTemplate));
         actions.hoverOnElement(locators.hoverCampaignTemplate);
         actions.click(locators.previewButton);
         actions.click(locators.closePreview);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locators.hoverCampaignTemplate));
+        actions.waitUntil(VISIBILITY_OF_ELEMENT,locators.hoverCampaignTemplate);
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(locators.hoverCampaignTemplate));
         actions.hoverOnElement(locators.hoverCampaignTemplate);
         actions.click(locators.useTemplateButton);
         String template = actions.getText(locators.assertCampaignDetails);
         Assert.assertEquals(template, "Default Template Preview", "choose Campaign Template is done");
-        Assert.assertNull(template, "assertion choose Campaign Template is null");
+        Assert.assertNotNull(template, "assertion choose Campaign Template is null");
 
 
     }
@@ -39,8 +42,8 @@ public class OneTimeCampaignSteps extends SeleniumBase {
         actions.sendKeys(locators.subjectLine, SubjectLine);
 
         actions.click(locators.segmentLookup);
-
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locators.segmentSearch));
+        actions.waitUntil(VISIBILITY_OF_ELEMENT,locators.segmentSearch);
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(locators.segmentSearch));
         actions.sendKeys(locators.segmentSearch, SegmentSearch);
 
         actions.click(locators.segmentSelection);
@@ -58,12 +61,12 @@ public class OneTimeCampaignSteps extends SeleniumBase {
             seleniumActions.clear(locators.searchForProduct);// deleted when issue solved
             seleniumActions.click(locators.addProductButton);*/
         actions.click(locators.oneTimeNextButton);
-
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locators.assertCustomizePopup));
+        actions.waitUntil(VISIBILITY_OF_ELEMENT,locators.assertCustomizePopup);
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(locators.assertCustomizePopup));
 
         String createCampaignSetting = actions.getText(locators.assertCustomizePopup);
         Assert.assertEquals(createCampaignSetting, "How it works", "create Campaign Setting is work");
-        Assert.assertNull(createCampaignSetting, "assertion create Campaign Setting is null");
+        Assert.assertNotNull(createCampaignSetting, "assertion create Campaign Setting is null");
     }
 
 
@@ -79,34 +82,35 @@ public class OneTimeCampaignSteps extends SeleniumBase {
 
         String customizeYourDesign = actions.getText(locators.assertReviewStep);
         Assert.assertEquals(customizeYourDesign, "Campaign Content", "customize Your Design is work");
-        Assert.assertNull(customizeYourDesign, "assertion customize Your Design  is null");
+        Assert.assertNotNull(customizeYourDesign, "assertion customize Your Design  is null");
     }
 
     public void reviewAndSend(String testMail, String searchTimeZone) {
 
-            Actions actions = new Actions(driver);
-            SeleniumActions seleniumActions = new SeleniumActions();
-            Locators locators = new Locators();
-            seleniumActions.clear(locators.testMail);
-            seleniumActions.sendKeys(locators.testMail, testMail);
-            seleniumActions.click(locators.testMailButton);
+        Actions actions = new Actions(driver);
+        SeleniumActions seleniumActions = new SeleniumActions();
+        Locators locators = new Locators();
+        seleniumActions.clear(locators.testMail);
+        seleniumActions.sendKeys(locators.testMail, testMail);
+        seleniumActions.click(locators.testMailButton);
 
-            //assertion test mail
-            wait.until(ExpectedConditions.visibilityOfElementLocated(locators.assertTestMsg));
+        //assertion test mail
+        seleniumActions.waitUntil(VISIBILITY_OF_ELEMENT,locators.assertTestMsg);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locators.assertTestMsg));
 
-            seleniumActions.scroll(1000);
-            seleniumActions.click(locators.previewMail);
-            seleniumActions.click(locators.closePreviewReview);
-            seleniumActions.scroll(1000);
-            seleniumActions.click(locators.later);
-            seleniumActions.click(locators.date);
-            seleniumActions.click(locators.selectDate);
-            seleniumActions.click(locators.time);
-            seleniumActions.scroll(1000);
-            seleniumActions.click(locators.hours);
-            seleniumActions.click(locators.timeZone);
-            seleniumActions.sendKeys(locators.searchTimeZone, searchTimeZone);
-            actions.sendKeys(Keys.ENTER).perform();
+        seleniumActions.scroll(1000);
+        seleniumActions.click(locators.previewMail);
+        seleniumActions.click(locators.closePreviewReview);
+        seleniumActions.scroll(1000);
+        seleniumActions.click(locators.later);
+        seleniumActions.click(locators.date);
+        seleniumActions.click(locators.selectDate);
+        seleniumActions.click(locators.time);
+        seleniumActions.scroll(1000);
+        seleniumActions.click(locators.hours);
+        seleniumActions.click(locators.timeZone);
+        seleniumActions.sendKeys(locators.searchTimeZone, searchTimeZone);
+        actions.sendKeys(Keys.ENTER).perform();
 
     }
 }
