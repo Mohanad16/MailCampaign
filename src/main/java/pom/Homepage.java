@@ -2,16 +2,17 @@ package pom;
 
 import Utils.Locators;
 import Utils.SeleniumActions;
+import org.testng.Assert;
 
 public class Homepage {
     public void EmailCampaign() {
-        try {
-            SeleniumActions seleniumActions = new SeleniumActions();
-            Locators locators = new Locators();
-            seleniumActions.click(locators.emailCampaignsLookup);
-            seleniumActions.click(locators.createEmailCampaign);
-        } catch (InterruptedException e) {
-            System.out.println("check exception");
-        }
+
+        SeleniumActions actions = new SeleniumActions();
+        Locators locators = new Locators();
+        actions.click(locators.emailCampaignsLookup);
+        actions.click(locators.createEmailCampaign);
+        String homePage = actions.getText(locators.assertHomepage);
+        Assert.assertEquals(homePage, "One Time Campaign", "home page assertion is done");
+        Assert.assertNull(homePage, "assertion home page is null");
     }
 }

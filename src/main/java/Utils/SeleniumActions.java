@@ -10,27 +10,43 @@ public class SeleniumActions extends SeleniumBase {
     public SeleniumActions() {
     }
 
-    public void click(By path) throws InterruptedException {
-        Thread.sleep(1000);
+    public void click(By path) {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         WebElement Click = driver.findElement(path);
         wait.until(ExpectedConditions.elementToBeClickable(path));
         Click.click();
     }
 
-    public void sendKeys(By path, String text) throws InterruptedException {
-        Thread.sleep(500);
+    public void sendKeys(By path, String text)  {
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         WebElement SendKey = driver.findElement(path);
         SendKey.sendKeys(text);
     }
 
-    public String getText(By path) throws InterruptedException {
-        Thread.sleep(500);
+    public String getText(By path)  {
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         WebElement GetText = driver.findElement(path);
         return GetText.getText();
     }
 
-    public void clear(By path) throws InterruptedException {
-        Thread.sleep(500);
+    public void clear(By path)  {
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         WebElement ClearText = driver.findElement(path);
         ClearText.clear();
     }
@@ -40,9 +56,13 @@ public class SeleniumActions extends SeleniumBase {
         js.executeScript("window.scrollTo(0, arguments[0])", scrollHeight);
     }
 
-    public void hoverOnElement(By path) throws InterruptedException {
+    public void hoverOnElement(By path) {
         Actions actions = new Actions(driver);
-        Thread.sleep(500);
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         WebElement Hover = driver.findElement(path);
         actions.moveToElement(Hover).perform();
     }

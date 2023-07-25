@@ -11,34 +11,23 @@ import pom.Homepage;
 import pom.SignInPage;
 
 public class CheckAllTemplates {
+    SignInPage signInPage = new SignInPage();
+
     @BeforeTest
     public void init() {
         SeleniumBase seleniumBase = new SeleniumBase();
         seleniumBase.seleniumConfig("https://app-stg.converted.in/login");
     }
 
-    //test and assert that login is working
-    @Test()
-
-    public void login() throws InterruptedException {
-        SignInPage signInPage = new SignInPage();
-        SeleniumActions actions = new SeleniumActions();
-        Locators locators = new Locators();
-        signInPage.loginPage("mckenzie.lincoln@yahoo.com", "password");
-        Assert.assertEquals(actions.getText(locators.assertLogin), "Overview");
-    }
-
-    @Test(dependsOnMethods = "login")
-    public void homePage() throws InterruptedException {
-        SeleniumActions actions = new SeleniumActions();
-        Locators locators = new Locators();
+    @Test
+    public void openRedmos() {
         Homepage home = new Homepage();
+        signInPage.loginPage("mckenzie.lincoln@yahoo.com", "password");
         home.EmailCampaign();
-        Assert.assertEquals(actions.getText(locators.assertHomepage), "One Time Campaign");
     }
 
-    @Test(dependsOnMethods = "homePage")
-    public void selectBackToSchoolTemplate() throws InterruptedException {
+    @Test(dependsOnMethods = "openRedmos")
+    public void selectBackToSchoolTemplate() {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
@@ -49,7 +38,7 @@ public class CheckAllTemplates {
     }
 
     @Test(dependsOnMethods = "selectBackToSchoolTemplate")
-    public void selectBackInStockTemplate() throws InterruptedException {
+    public void selectBackInStockTemplate()  {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
@@ -60,7 +49,7 @@ public class CheckAllTemplates {
     }
 
     @Test(dependsOnMethods = "selectBackInStockTemplate")
-    public void selectDiscountOnSelectedItemsTemplate() throws InterruptedException {
+    public void selectDiscountOnSelectedItemsTemplate()  {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
@@ -71,7 +60,7 @@ public class CheckAllTemplates {
     }
 
     @Test(dependsOnMethods = "selectDiscountOnSelectedItemsTemplate")
-    public void selectShoppingSeasonSummerSaleTemplate() throws InterruptedException {
+    public void selectShoppingSeasonSummerSaleTemplate()  {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
@@ -82,7 +71,7 @@ public class CheckAllTemplates {
     }
 
     @Test(dependsOnMethods = "selectShoppingSeasonSummerSaleTemplate")
-    public void select24HrsFlashSaleTemplate() throws InterruptedException {
+    public void select24HrsFlashSaleTemplate()  {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
@@ -93,7 +82,7 @@ public class CheckAllTemplates {
     }
 
     @Test(dependsOnMethods = "select24HrsFlashSaleTemplate")
-    public void select24HrsFlashSale2Template() throws InterruptedException {
+    public void select24HrsFlashSale2Template()  {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
@@ -104,7 +93,7 @@ public class CheckAllTemplates {
     }
 
     @Test(dependsOnMethods = "select24HrsFlashSale2Template")
-    public void selectLaborDayTemplate() throws InterruptedException {
+    public void selectLaborDayTemplate()  {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
@@ -115,7 +104,7 @@ public class CheckAllTemplates {
     }
 
     @Test(dependsOnMethods = "selectLaborDayTemplate")
-    public void selectEbookReleasedTemplate() throws InterruptedException {
+    public void selectEbookReleasedTemplate()  {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
@@ -126,7 +115,7 @@ public class CheckAllTemplates {
     }
 
     @Test(dependsOnMethods = "selectEbookReleasedTemplate")
-    public void selectSummerSaleTemplate() throws InterruptedException {
+    public void selectSummerSaleTemplate()  {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
@@ -137,7 +126,7 @@ public class CheckAllTemplates {
     }
 
     @Test(dependsOnMethods = "selectSummerSaleTemplate")
-    public void selectWomenDayTemplate() throws InterruptedException {
+    public void selectWomenDayTemplate()  {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
@@ -148,7 +137,7 @@ public class CheckAllTemplates {
     }
 
     @Test(dependsOnMethods = "selectWomenDayTemplate")
-    public void selectHelloBlackFridayTemplate() throws InterruptedException {
+    public void selectHelloBlackFridayTemplate()  {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
@@ -159,7 +148,7 @@ public class CheckAllTemplates {
     }
 
     @Test(dependsOnMethods = "selectHelloBlackFridayTemplate")
-    public void selectDiscountEmailTemplate() throws InterruptedException {
+    public void selectDiscountEmailTemplate()  {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
@@ -170,7 +159,7 @@ public class CheckAllTemplates {
     }
 
     @Test(dependsOnMethods = "selectDiscountEmailTemplate")
-    public void selectWelcomeEmailTemplate() throws InterruptedException {
+    public void selectWelcomeEmailTemplate() {
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();

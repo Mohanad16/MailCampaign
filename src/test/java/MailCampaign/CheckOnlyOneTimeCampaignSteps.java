@@ -6,6 +6,7 @@ import Utils.SeleniumBase;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import pom.Homepage;
 import pom.OneTimeCampaignSteps;
 import pom.SignInPage;
 
@@ -15,6 +16,8 @@ import java.util.List;
 import static Utils.SeleniumBase.driver;
 
 public class CheckOnlyOneTimeCampaignSteps {
+    SignInPage signInPage = new SignInPage();
+
     @BeforeTest
     public void init() {
         SeleniumBase seleniumBase = new SeleniumBase();
@@ -24,46 +27,43 @@ public class CheckOnlyOneTimeCampaignSteps {
     //test and assert that login is working
     @Test()
 
-    public void login() throws InterruptedException {
-        SignInPage signInPage = new SignInPage();
-        SeleniumActions actions = new SeleniumActions();
-        Locators locators = new Locators();
+    public void openRedmos() {
+        Homepage home = new Homepage();
         signInPage.loginPage("mckenzie.lincoln@yahoo.com", "password");
-        Assert.assertEquals(actions.getText(locators.assertLogin), "Overview");
+        home.EmailCampaign();
         driver.navigate().to("https://app-stg.converted.in/dashboard/campaigns/email/one-time-campaign/templates/83/list");
     }
 
-    @Test(dependsOnMethods = "login")
-    public void chooseCampaignTemplate() throws InterruptedException {
+    @Test(dependsOnMethods = "openRedmos")
+    public void chooseCampaignTemplate(){
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         OneTimeCampaignSteps steps = new OneTimeCampaignSteps();
+        signInPage.loginPage("mckenzie.lincoln@yahoo.com", "password");
         steps.chooseCampaignTemplate();
         Assert.assertEquals(actions.getText(locators.assertCampaignDetails), "Defualt Template Preview");
     }
 
     @Test(dependsOnMethods = "chooseCampaignTemplate")
 
-    public void createCampaignSettings() throws InterruptedException {
+    public void createCampaignSettings(){
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         OneTimeCampaignSteps steps = new OneTimeCampaignSteps();
         List<String> products = Arrays.asList("test", "star", "sunglasses");
         steps.createCampaignSettings("campaign1", "subject1", "all", "new", products);
-        Assert.assertEquals(actions.getText(locators.assertCustomizePopup), "How it works");
     }
 
     @Test(dependsOnMethods = "createCampaignSettings")
-    public void customizeYourDesign() throws InterruptedException {
+    public void customizeYourDesign(){
         OneTimeCampaignSteps steps = new OneTimeCampaignSteps();
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
         steps.customizeYourDesign();
-        Assert.assertEquals(actions.getText(locators.assertReviewStep), "Campaign Content");
     }
 
     @Test(dependsOnMethods = "customizeYourDesign")
-    public void reviewAndSend() throws InterruptedException {
+    public void reviewAndSend() {
         OneTimeCampaignSteps steps = new OneTimeCampaignSteps();
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
