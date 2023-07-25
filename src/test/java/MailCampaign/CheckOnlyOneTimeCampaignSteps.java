@@ -41,14 +41,12 @@ public class CheckOnlyOneTimeCampaignSteps {
         OneTimeCampaignSteps steps = new OneTimeCampaignSteps();
         signInPage.loginPage("mckenzie.lincoln@yahoo.com", "password");
         steps.chooseCampaignTemplate();
-        Assert.assertEquals(actions.getText(locators.assertCampaignDetails), "Defualt Template Preview");
+        Assert.assertEquals(actions.getText(locators.assertCampaignDetails), "Default Template Preview");
     }
 
     @Test(dependsOnMethods = "chooseCampaignTemplate")
 
     public void createCampaignSettings(){
-        SeleniumActions actions = new SeleniumActions();
-        Locators locators = new Locators();
         OneTimeCampaignSteps steps = new OneTimeCampaignSteps();
         List<String> products = Arrays.asList("test", "star", "sunglasses");
         steps.createCampaignSettings("campaign1", "subject1", "all", "new", products);
@@ -57,8 +55,6 @@ public class CheckOnlyOneTimeCampaignSteps {
     @Test(dependsOnMethods = "createCampaignSettings")
     public void customizeYourDesign(){
         OneTimeCampaignSteps steps = new OneTimeCampaignSteps();
-        SeleniumActions actions = new SeleniumActions();
-        Locators locators = new Locators();
         steps.customizeYourDesign();
     }
 

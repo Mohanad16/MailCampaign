@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50d4f062-e1e5-4ce4-9c80-4ce4061138d8" name="Changes" comment="adding xml files and two new scenarios to test">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
+    <list default="true" id="50d4f062-e1e5-4ce4-9c80-4ce4061138d8" name="Changes" comment="updating exceptions and assertions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/SeleniumActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/SeleniumActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pom/CreateCampaigns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/CreateCampaigns.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pom/Homepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/Homepage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pom/OneTimeCampaignSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/OneTimeCampaignSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pom/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/SignInPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MailCampaign/CheckAllTemplates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MailCampaign/CheckAllTemplates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MailCampaign/CheckOnlyOneTimeCampaignSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MailCampaign/CheckOnlyOneTimeCampaignSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MailCampaign/OneTimeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MailCampaign/OneTimeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689676295707</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="updating exceptions and assertions">
+      <option name="closed" value="true" />
+      <created>1690282959493</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1690282959493</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -259,6 +257,7 @@
     <MESSAGE value="functions completed except push4" />
     <MESSAGE value="functions completed except push5" />
     <MESSAGE value="adding xml files and two new scenarios to test" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding xml files and two new scenarios to test" />
+    <MESSAGE value="updating exceptions and assertions" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating exceptions and assertions" />
   </component>
 </project>
