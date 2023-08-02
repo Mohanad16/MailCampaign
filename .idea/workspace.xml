@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="50d4f062-e1e5-4ce4-9c80-4ce4061138d8" name="Changes" comment="updating exceptions and assertions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/SeleniumActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/SeleniumActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pom/CreateCampaigns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/CreateCampaigns.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pom/Homepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/Homepage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pom/OneTimeCampaignSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/OneTimeCampaignSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Locators.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pom/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/SignInPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,17 +35,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_directory_selection": "C:/Users/Heba/IdeaProjects/OneTimeMailCampaign/src/test/java",
-    "last_opened_file_path": "C:/Users/Heba/IdeaProjects/last update",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Heba/IdeaProjects/OneTimeMailCampaign/src/test/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Heba/IdeaProjects/last update&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pom" />
@@ -215,15 +211,7 @@
       <option name="project" value="LOCAL" />
       <updated>1690282959493</updated>
     </task>
-    <task id="LOCAL-00013" summary="updating exceptions and assertions">
-      <option name="closed" value="true" />
-      <created>1690283086118</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1690283086118</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

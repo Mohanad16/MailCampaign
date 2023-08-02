@@ -15,12 +15,13 @@ public class Locators {
     //public By emailCampaignsLookup = By.xpath("//div[@class='main-sidebar-menu']/ul/li[7]/a/span");
     public By emailCampaignsLookup = By.xpath("//span[text()='Email Campaigns']");
     //public By createEmailCampaign = By.xpath("(//a[@class='sub-item-action'])[16]");
-    public By createEmailCampaign = By.xpath("(//a[@class='sub-item-action'])[17]");
+    public By createEmailCampaign = By.xpath("(//a[text()='Create Campaign'])[3]");
     public By assertHomepage = By.className("campaign-item-title");
 
     //steps to go inside chosen template
     public By oneTimeNextButton = By.xpath("//button[text()='Next']");
-    public By templateGroups = By.xpath("//div[@data-group-id='all']");
+    //public By templateGroups = By.xpath("//div[@data-group-id='all']");
+    public By templateGroups = By.xpath("//div[@data-group-id=25]");
     public By hoverOnBackToSchool = By.xpath("//div[@data-template-type='83']");
     public By selectBackToSchool = By.xpath("//*[@data-template-type='83']//button[text()='Select']");
     public By assertBackToSchool = By.xpath("//*[text()='Shopping Season Back To School']");
@@ -32,7 +33,7 @@ public class Locators {
     public By closePreview = By.xpath("//button[@class='btn btn-secondary']");
     public By useTemplateButton = By.xpath("//button[@class='use-template-btn']");
 
-    public By assertCampaignDetails = By.xpath("//*[text()='Defualt Template Preview']");
+    public By assertCampaignDetails = By.xpath("//*[text()='Default Template Preview']");
 
 
     //locators createCampaignSettings

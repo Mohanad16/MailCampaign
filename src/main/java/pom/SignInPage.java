@@ -16,9 +16,8 @@ public class SignInPage extends SeleniumBase {
         actions.sendKeys(locators.LoginPassword, Password);
         actions.click(locators.LoginButton);
         String login = actions.getText(locators.assertLogin);
-        Assert.assertEquals(login , "Overview", "login successfully");
-        Assert.assertNotNull(login , "assertion login is null");
-
+        Assert.assertEquals(login, "Overview", "login successfully");
+        Assert.assertNotNull(login, "assertion login is null");
 
     }
 }
