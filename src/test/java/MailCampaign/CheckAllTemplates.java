@@ -16,7 +16,7 @@ public class CheckAllTemplates {
     @BeforeTest
     public void init() {
         SeleniumBase seleniumBase = new SeleniumBase();
-        seleniumBase.seleniumConfig("https://app-stg.converted.in/login");
+        //seleniumBase.seleniumConfig("https://app-stg.converted.in/login");
     }
 
     @Test

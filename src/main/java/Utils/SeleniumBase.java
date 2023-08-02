@@ -14,13 +14,24 @@ public class SeleniumBase {
     public SeleniumBase() {
     }
 
-    public WebDriver seleniumConfig(String baseUrl) {
+    public WebDriver seleniumConfig() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(60));
         driver.manage().window().maximize();
-        driver.get(baseUrl);
         return driver;
     }
+
+    //get value environment
+    public void Environment(){
+        Config.Environment environment = new Config.Environment();
+        // Set all three values at once using the setter method
+        environment.setEnvironmentValues("https://app-stg.converted.in/login", "https://app.converted.in/login", "https://app-dev.converted.in/login");
+        // Get and print one value using the getter method
+        String value = environment.getValue(0);
+        driver.get(value);
+    }
+
 }
+
 

@@ -7,20 +7,15 @@ public class Locators {
     public By LoginEmail = By.id("email");
     public By LoginPassword = By.id("password");
     public By LoginButton = By.xpath("//button[@type='submit']");
-
-    //public By assertLogin = By.xpath("//a[@id='contact_support']");
     public By assertLogin = By.xpath("//h1[@class='title']");
 
     //home page locators
-    //public By emailCampaignsLookup = By.xpath("//div[@class='main-sidebar-menu']/ul/li[7]/a/span");
     public By emailCampaignsLookup = By.xpath("//span[text()='Email Campaigns']");
-    //public By createEmailCampaign = By.xpath("(//a[@class='sub-item-action'])[16]");
     public By createEmailCampaign = By.xpath("(//a[text()='Create Campaign'])[3]");
     public By assertHomepage = By.className("campaign-item-title");
 
     //steps to go inside chosen template
     public By oneTimeNextButton = By.xpath("//button[text()='Next']");
-    //public By templateGroups = By.xpath("//div[@data-group-id='all']");
     public By templateGroups = By.xpath("//div[@data-group-id=25]");
     public By hoverOnBackToSchool = By.xpath("//div[@data-template-type='83']");
     public By selectBackToSchool = By.xpath("//*[@data-template-type='83']//button[text()='Select']");

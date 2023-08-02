@@ -21,7 +21,8 @@ public class OneTimeTest {
     @BeforeTest
     public void init() {
         SeleniumBase seleniumBase = new SeleniumBase();
-        seleniumBase.seleniumConfig("https://app-stg.converted.in/login");
+        seleniumBase.seleniumConfig();
+        seleniumBase.Environment();
     }
 
 
@@ -33,37 +34,37 @@ public class OneTimeTest {
     }
 
     @Test(dependsOnMethods = "openRedmos")
-    public void selectOneTimeCampaign(){
+    public void selectOneTimeCampaign() {
 
         Locators locators = new Locators();
         CreateCampaigns oneTime = new CreateCampaigns();
 
-            oneTime.selectCampaignType();
+        oneTime.selectCampaignType();
         oneTime.oneTimeCampaign(locators.hoverOnBackToSchool, locators.selectBackToSchool);
     }
 
     @Test(dependsOnMethods = "selectOneTimeCampaign")
-    public void chooseCampaignTemplate()  {
+    public void chooseCampaignTemplate() {
         OneTimeCampaignSteps steps = new OneTimeCampaignSteps();
         steps.chooseCampaignTemplate();
     }
 
     @Test(dependsOnMethods = "chooseCampaignTemplate")
 
-    public void createCampaignSettings()  {
+    public void createCampaignSettings() {
         OneTimeCampaignSteps steps = new OneTimeCampaignSteps();
         List<String> products = Arrays.asList("test", "star", "sunglasses");
         steps.createCampaignSettings("campaign1", "subject1", "all", "new", products);
     }
 
     @Test(dependsOnMethods = "createCampaignSettings")
-    public void customizeYourDesign()  {
+    public void customizeYourDesign() {
         OneTimeCampaignSteps steps = new OneTimeCampaignSteps();
         steps.customizeYourDesign();
     }
 
     @Test(dependsOnMethods = "customizeYourDesign")
-    public void reviewAndSend()  {
+    public void reviewAndSend() {
         OneTimeCampaignSteps steps = new OneTimeCampaignSteps();
         SeleniumActions actions = new SeleniumActions();
         Locators locators = new Locators();
