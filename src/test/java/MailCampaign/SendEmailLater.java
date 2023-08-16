@@ -6,6 +6,7 @@ import Utils.SeleniumBase;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import pom.CreateCampaigns;
 import pom.Homepage;
 import pom.OneTimeCampaignSteps;
 import pom.SignInPage;
@@ -13,47 +14,51 @@ import pom.SignInPage;
 import java.util.Arrays;
 import java.util.List;
 
-import static Utils.SeleniumBase.driver;
+public class SendEmailLater {
 
-public class CheckOnlyOneTimeCampaignSteps {
     SignInPage signInPage = new SignInPage();
 
     @BeforeTest
     public void init() {
         SeleniumBase seleniumBase = new SeleniumBase();
-        //seleniumBase.seleniumConfig("https://app-stg.converted.in/login");
+        seleniumBase.seleniumConfig();
+        seleniumBase.Environment();
     }
 
-    //test and assert that login is working
-    @Test()
 
+    @Test
     public void openRedmos() {
         Homepage home = new Homepage();
         signInPage.loginPage("mckenzie.lincoln@yahoo.com", "password");
         home.EmailCampaign();
-        driver.navigate().to("https://app-stg.converted.in/dashboard/campaigns/email/one-time-campaign/templates/83/list");
     }
 
     @Test(dependsOnMethods = "openRedmos")
-    public void chooseCampaignTemplate(){
-        SeleniumActions actions = new SeleniumActions();
+    public void selectOneTimeCampaign() {
+
         Locators locators = new Locators();
+        CreateCampaigns oneTime = new CreateCampaigns();
+
+        oneTime.selectCampaignType();
+        oneTime.oneTimeCampaign(locators.hoverOnBackToSchool, locators.selectBackToSchool);
+    }
+
+    @Test(dependsOnMethods = "selectOneTimeCampaign")
+    public void chooseCampaignTemplate() {
         OneTimeCampaignSteps steps = new OneTimeCampaignSteps();
-        signInPage.loginPage("mckenzie.lincoln@yahoo.com", "password");
         steps.chooseCampaignTemplate();
-        Assert.assertEquals(actions.getText(locators.assertCampaignDetails), "Default Template Preview");
     }
 
     @Test(dependsOnMethods = "chooseCampaignTemplate")
 
-    public void createCampaignSettings(){
+    public void createCampaignSettings() {
         OneTimeCampaignSteps steps = new OneTimeCampaignSteps();
         List<String> products = Arrays.asList("test", "star", "sunglasses");
         steps.createCampaignSettings("campaign1", "subject1", "all", "new", products);
     }
 
     @Test(dependsOnMethods = "createCampaignSettings")
-    public void customizeYourDesign(){
+    public void customizeYourDesign() {
         OneTimeCampaignSteps steps = new OneTimeCampaignSteps();
         steps.customizeYourDesign();
     }
@@ -65,8 +70,11 @@ public class CheckOnlyOneTimeCampaignSteps {
         Locators locators = new Locators();
         Assert.assertEquals(actions.getText(locators.campaignNameCheck), "campaign1");
         Assert.assertEquals(actions.getText(locators.subjectLineCheck), "subject1");
-        Assert.assertEquals(actions.getText(locators.segmentCheck), "All Customers");
+        Assert.assertEquals(actions.getText(locators.segmentCheck), "ALL");
         Assert.assertTrue(actions.getText(locators.productsCheck).contains("Sunglasses"));
-        steps.reviewAndSendLater("h.adel@converted.in","cairo");
+        steps.reviewAndSendLater("h.adel@converted.in", "cairo");
+        actions.click(locators.publish);
+        Assert.assertEquals(actions.getText(locators.assertPublishLater), "Your campaign was successfully created. Your campaign is queued to be sent.");
+        actions.click(locators.goToMyCampaign);
     }
 }

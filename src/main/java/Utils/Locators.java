@@ -67,6 +67,7 @@ public class Locators {
     public By previewMail = By.xpath("//button[@class='preview-email-action']");
     public By closePreviewReview = By.xpath("(//button[@aria-label='Close'])[1]");
     public By later = By.id("later-cta");
+    public By now = By.xpath("//*[@class='btn-active now-cta']");
     public By date = By.xpath("//input[@class='date-picker-wrapper']");
     public By selectDate = By.xpath("//*[@class='dudp__date current selected']");
     public By time = By.xpath("//input[@class='time-picker-input timepicker hasWickedpicker']");
@@ -75,6 +76,11 @@ public class Locators {
     public By searchTimeZone = By.className("select2-search__field");
 
     public By assertTestMsg = By.xpath("//*[@class='success-validation hidden-by-default']");
+    public By publish = By.xpath("//button[text()='Publish']");
+    public By goToMyCampaign = By.xpath("//button[text()='Go to my campaigns']");
+
+    public By assertPublishLater = By.xpath("//p[text()='Your campaign was successfully created. Your campaign is queued to be sent.']");
+    public By assertPublishNow = By.xpath("//p[text()='Your campaign was successfully created & sent.']");
 
     //back button
     public By backButton = By.xpath("//button[text()='Back']");

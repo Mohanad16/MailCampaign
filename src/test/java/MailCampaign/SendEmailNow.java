@@ -14,8 +14,7 @@ import pom.SignInPage;
 import java.util.Arrays;
 import java.util.List;
 
-public class OneTimeTest {
-
+public class SendEmailNow {
     SignInPage signInPage = new SignInPage();
 
     @BeforeTest
@@ -70,8 +69,11 @@ public class OneTimeTest {
         Locators locators = new Locators();
         Assert.assertEquals(actions.getText(locators.campaignNameCheck), "campaign1");
         Assert.assertEquals(actions.getText(locators.subjectLineCheck), "subject1");
-        Assert.assertEquals(actions.getText(locators.segmentCheck), "All Customers");
+        Assert.assertEquals(actions.getText(locators.segmentCheck), "ALL");
         Assert.assertTrue(actions.getText(locators.productsCheck).contains("Sunglasses"));
-        steps.reviewAndSend("h.adel@converted.in", "cairo");
+        steps.reviewAndSendNow("m.abolela@converted.in");
+        actions.click(locators.publish);
+        Assert.assertEquals(actions.getText(locators.assertPublishNow),"Your campaign was successfully created & sent.");
+        actions.click(locators.goToMyCampaign);
     }
 }

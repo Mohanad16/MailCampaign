@@ -3,7 +3,7 @@
 
     <test name="Test Full Steps in One-Time EMail Campaign">
         <classes>
-            <class name="MailCampaign.OneTimeTest"/>
+            <class name="MailCampaign.SendEmailLater"/>
         </classes>
     </test>
 

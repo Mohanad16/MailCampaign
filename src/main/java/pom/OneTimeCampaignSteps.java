@@ -85,7 +85,7 @@ public class OneTimeCampaignSteps extends SeleniumBase {
         Assert.assertNotNull(customizeYourDesign, "assertion customize Your Design  is null");
     }
 
-    public void reviewAndSend(String testMail, String searchTimeZone) {
+    public void reviewAndSendLater(String testMail, String searchTimeZone) {
 
         Actions actions = new Actions(driver);
         SeleniumActions seleniumActions = new SeleniumActions();
@@ -113,4 +113,27 @@ public class OneTimeCampaignSteps extends SeleniumBase {
         actions.sendKeys(Keys.ENTER).perform();
 
     }
+
+
+    public void reviewAndSendNow(String testMail) {
+
+
+        SeleniumActions seleniumActions = new SeleniumActions();
+        Locators locators = new Locators();
+        seleniumActions.clear(locators.testMail);
+        seleniumActions.sendKeys(locators.testMail, testMail);
+        seleniumActions.click(locators.testMailButton);
+
+        //assertion test mail
+        seleniumActions.waitUntil(VISIBILITY_OF_ELEMENT, locators.assertTestMsg);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locators.assertTestMsg));
+
+        seleniumActions.scroll(1000);
+        seleniumActions.click(locators.previewMail);
+        seleniumActions.click(locators.closePreviewReview);
+        seleniumActions.scroll(1000);
+        seleniumActions.click(locators.now);
+
+    }
+
 }
